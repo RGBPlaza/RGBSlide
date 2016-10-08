@@ -10,18 +10,21 @@
         slideInterval = slideInterval || 3300;
         $(this).append('<style>.sliderBox{background-color:#222;z-index:-1;margin:0;position:absolute;left:0;top:0;width:100vw;height:80vh;}'
             + '#sliderControl{padding:0;text-align:center;z-index:100;height:22px;width:100vw;position:absolute;left:0;bottom:0;background:rgba(0,0,0,0.4)}'
-            + '.sliderBull{transition:color 0.2s;cursor:pointer;highlight:none;color:#aaa;padding-left:4px;padding-right:4px;margin:0;text-align:center;display:inline;font-size:36px;position:relative;top:-18px;}'
+            + '.sliderBull{transition:color 0.2s;cursor:pointer;highlight:none;color:#aaa;padding-left:4px;padding-right:4px;margin:0;text-align:center;display:inline;font-size:37px;position:relative;top:-17px;}'
             + '.sliderArr{transition:background 0.2s;z-index:100;position:absolute;top:32vh;bottom:48vh;width:50px;height:50px;padding:8px;background:rgba(0,0,0,0.05);border-radius:0px 5px 5px 0px;cursor:pointer;}'
             + '.sliderArr:hover{background:rgba(0,0,0,0.4)}'
             + 'body{overflow-x:hidden}'
-            + '</style>');
+            + '</style>'
+            + '<link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet"> ');
         $(this).css({
-            margin: 0,
+            margin: "0",
             background: "#ddd",
             width: "100vw",
             height: "80vh",
             overflow: "hidden",
-            position: "relative"
+            position: "relative",
+            "font-family": "'Quicksand','Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+            color:"#eee"
         });
         $(this).append('<div id="sliderControl"></div>');
         $(this).append('<img class="sliderArr" id="sliderLeft" style="left:-5px;" src="http://i.imgur.com/5aJOioi.png"/>');
@@ -161,9 +164,5 @@
         return this;
     };
 }(jQuery));
-
-$(document).ready(function () {
-    $("#slider").rgbslide();
-});
 
 //  Made with ♥ by RGBPlaza © 2016
