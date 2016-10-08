@@ -1,0 +1,27 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300';
+@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400';
+
+body {
+    background:#282828;
+    color:#fff;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sliderBox h1{
+    text-align:center;
+    font-size:80px;
+    font-weight:lighter;
+    font-family:"Quicksand";
+    letter-spacing:-3px;
+}
+
+#sl1{
+    background:#ee262e;
+}
+#sl2{
+    background:#9Add06;
+}
+#sl3{
+    background:#00b2ac;
+}
