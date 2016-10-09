@@ -1,1 +1,82 @@
-﻿
+﻿@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400';
+
+body {
+    background:#282828;
+    color:#fff;
+    margin:0px;
+    font-family:'Quicksand','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x:hidden;
+}
+
+#titleArea h1, #titleArea h2 {
+    text-align: center;
+    font-size: 72px;
+    letter-spacing: -3px;
+    transition:font-size 0.2s;
+    font-weight:lighter;
+}
+#titleArea h2 {
+    font-size: 36px;
+}
+@media(max-width:991x) {
+    #titleArea h1 {
+        font-size: 48px;
+    }
+
+    #titleArea h2 {
+        font-size: 28px;
+    }
+}
+
+h3,h4,p{
+    font-weight:lighter;
+}
+h4{
+    font-size:22px;
+}
+p{
+    font-size:18px;
+}
+
+.sectBtn{
+    padding:12px;
+    width:100vw;
+    background:#222;
+    border-bottom:2px solid #333;
+    border-top:2px solid #333;
+}
+
+#copyLink::selection{
+    background:#1a1a1a;
+    color:#FD2138;
+}
+#copyLink{
+    min-width:50vw;
+    border:none;
+    background:inherit;
+    height:70px;
+}
+@media(max-width:991px) {
+    #copyLink {
+        width: 100vw;
+    }
+
+    .col-md-6 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 16px;
+    }
+}
+@media(min-width:992px){
+    .row{
+        border-bottom: 2px solid #333;
+        padding-bottom: 16px;
+    }
+}
+
+.codeBlock{
+    border:2px solid #333;
+    color:#ccc;
+    background:#1a1a1a;
+    padding:8px;
+    font-family:'Courier New',monospace;
+}
