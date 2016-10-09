@@ -46,29 +46,66 @@
     <div id="htSect" class="container-fluid sect">
         <div class="row">
             <div class="col-md-6">
-                <h4>1:</h4>
-                <p>Download either</p>
-                <p><a style="color:#FD2138" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.js" download>rgbSlide.js</a> or <a style="color:#8ECD21" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js" download>rgbSlide.min.js</a></p>
-                <p>And include it before your scripts like so:</p>
-                <div style="border:2px solid #333;color:#ccc;background:#1a1a1a;padding:8px;font-family:'Courier New',monospace">
-                    &lt;head> <br />
-                    &#160;&#160;&#160;&lt;Bootstrap> <br />
-                    &#160;&#160;&#160;&lt;jQuery><br />
-                    &#160;&#160;&#160;&lt;script src="dependencies/rgbSlide.min.js">&lt;/script><br />
-                    &#160;&#160;&#160;&lt;Other Scripts and CSS><br />
-                    &lt;/head>
+                <h4>1 - Creating your slider:</h4>
+                <p> - Create a div element and give it any ID you like.</p>
+                <p> - Populate it with however many slides you want.</p>
+                <div class="codeBlock">
+                    &lt;div id="exampleSlider"> <br />
+                    &#160;&#160;&#160;&lt;div>&lt;h1>Slide 1&lt;/h1>&lt;/div><br />
+                    &#160;&#160;&#160;&lt;div>&lt;h1>Slide 2&lt;/h1>&lt;/div><br />
+                    &#160;&#160;&#160;&lt;div>&lt;h1>Slide 3&lt;/h1>&lt;/div><br />
+                    &lt;/div>
+                </div>
+                <p style="margin-top:4px;margin-bottom:6px;"> - And simply just call the rgbslide() method on it</p>
+                <div class="codeBlock">
+                    $("#exampleSlider").rgbslide();
                 </div>
             </div>
             <div class="col-md-6">
-                <h4>2:</h4>
-                <p>Or just use</p>
-                <p style="color:#21C8CD;font-family:'Courier New',monospace;font-size:14px;">&lt;script src="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js"> &lt;/script></p>
-                <p>So you dont have to download anything</p>
+                <h4>2 - Use your own CSS:</h4>
+                <p> - All slides will be sequentially given id's: sl1,sl2,sl3...</p>
+                <p> - You can also style every slide in one go using the .sliderBox class</p>
+                <p> - Feel free to override the default styles (We're only a backbone!)</p>
+                <div class="codeBlock">
+                    @import 'https://fonts.googleapis.com/css?family=Quicksand:300,400';
+                    .sliderBox h1{<br/>
+                    &#160;&#160;&#160;font-family:'Quicksand','Segoe UI', Geneva, sans-serif;<br />
+                    &#160;&#160;&#160;font-weight:'lighter';<br />
+                    }
+                    #sl1{<br />
+                    &#160;&#160;&#160;background:#FD2138;<br />
+                    }
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <h4>3:</h4>
+                <h4>3 - Customise with optional parameters:</h4>
+                <p> - By default, the rate at which slides change is 3400ms. However, you can change it yourself!</p>
+                <p> - All you need to do is put the desired interval as an int parameter</p>
+                <div class="codeBlock">
+                    $("#exampleSlider").rgbslide(2000);
+                    //This will make the slides change every 2 seconds
+                </div>
+                <p> - We'll be adding more options soon - at your request!</p>
+            </div>
+            <div class="col-md-6">
+                <h4>4 - Enjoy:</h4>
+                <p> - RGBSlide is so easy to implement and manipulate to fit your website</p>
+                <p> - Load times won't be affected so the experience will stay smooth</p>
+                <p> - It's flat, clean, modern and neutral, making RGBSlide an extremely versatile plugin to suit almost all websites</p>
+                <div class="codeBlock">
+                    var price = "Free!";
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <h3 id="exBtn" class="sectBtn">Example:</h3>
+    <div id="exSect" class="container-fluid sect">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>A:</h4>
                 <p>Download either</p>
                 <p><a style="color:#FD2138" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.js" download>rgbSlide.js</a> or <a style="color:#8ECD21" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js" download>rgbSlide.min.js</a></p>
                 <p>And include it before your scripts like so:</p>
@@ -82,8 +119,9 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <h4>4:</h4>
+                <h4>B:</h4>
                 <p>Or just use</p>
+                <textarea contenteditable="false" id="copyLink" style="color:#21C8CD;font-family:'Courier New',monospace;font-size:14px;">&lt;script src="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js"> &lt;/script></textarea>
                 <p>So you dont have to download anything</p>
             </div>
         </div>
