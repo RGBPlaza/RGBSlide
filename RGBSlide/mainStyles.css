@@ -1,4 +1,4 @@
-﻿@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400';
+﻿@import 'https://fonts.googleapis.com/css?family=Quicksand:300,400|Exo:900';
 
 body {
     background:#282828;
@@ -61,7 +61,7 @@ p{
         width: 100vw;
     }
 
-    .col-md-6 {
+    .col-md-6,.col-md-4 {
         border-bottom: 2px solid #333;
         padding-bottom: 16px;
     }
@@ -79,4 +79,59 @@ p{
     background:#1a1a1a;
     padding:8px;
     font-family:'Courier New',monospace;
+}
+
+/*Demo start*/
+#exampleSlider{
+    width:92vw;
+    left:4vw;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding:0;
+}
+.sliderBox{
+    text-align:center;
+    background-size:contain;
+    color:rgba(255,255,255,0.9);
+    font-family:'Exo';
+    font-weight:900;
+    padding:0;
+}
+.sliderBox h1{
+    font-size:70px;
+}
+#sl1{
+    background:url(http://freelandmarketplace.com/wp-content/uploads/pasta-and-Meatballs.jpg) center center no-repeat;
+}
+#sl2{
+    background:url(http://richfieldmnchamber.org/wp-content/uploads/2015/02/Dollarphotoclub_69856461.jpg) center center no-repeat;
+    background-size:100%;
+}
+#sl3{
+    background:url(http://www.microcosmologist.com/blog/wp-content/uploads/2012/02/Nicks-Pizza-from-NYC.jpg) center center no-repeat;
+}
+/*Demo end*/
+
+#exSect{
+    padding-left:16px;
+    padding-right:16px;
+    padding-bottom:48px;
+}
+#exSect .codeBlock{
+    height:200px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#footer{
+    width:100%;
+    text-align:right;
+    padding-right:16px;
+    background-color:#1a1a1a;
+    position:page;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding-top:8px;
+    border-bottom:2px solid #333;
 }
