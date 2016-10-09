@@ -1,20 +1,93 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>RGBCarousel</title>
-	<meta charset="utf-8" />
+    <title>rgblide.js</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="rgbSlide.min.js"></script>
+    <script src="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="mainStyles.css" />
     <script src="mainScript.js"></script>
 </head>
 <body>
-    <div id="slider">
-        <div><h1>UWP Developer</h1></div>
-        <div><h1>Web Developer</h1></div>
-        <div><h1>Chef</h1></div>
+    <div id="titleArea">
+        <h1><span style="color:#FD2138">R</span><span style="color:#8ECD21">G</span><span style="color:#21C8CD">B</span>Slide.js</h1>
+        <h2>A clean jQuery slider to spruce up your webpage</h2>
     </div>
+
+    <h3 id="gsBtn" class="sectBtn">Getting Started:</h3>
+    <div id="gsSect" class="container-fluid sect">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>A:</h4>
+                <p>Download either</p>
+                <p><a style="color:#FD2138" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.js" download>rgbSlide.js</a> or <a style="color:#8ECD21" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js" download>rgbSlide.min.js</a></p>
+                <p>And include it before your scripts like so:</p>
+                <div style="border:2px solid #333;color:#ccc;background:#1a1a1a;padding:8px;font-family:'Courier New',monospace">
+                    &lt;head> <br />
+                    &#160;&#160;&#160;&lt;Bootstrap> <br />
+                    &#160;&#160;&#160;&lt;jQuery><br />
+                    &#160;&#160;&#160;&lt;script src="dependencies/rgbSlide.min.js">&lt;/script><br />
+                    &#160;&#160;&#160;&lt;Other Scripts and CSS><br />
+                    &lt;/head>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>B:</h4>
+                <p>Or just use</p>
+                <textarea contenteditable="false" id="copyLink" style="color:#21C8CD;font-family:'Courier New',monospace;font-size:14px;">&lt;script src="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js"> &lt;/script></textarea>
+                <p>So you dont have to download anything</p>
+            </div>
+        </div>
+    </div>
+
+    <h3 id="htBtn" class="sectBtn">How to Use:</h3>
+    <div id="htSect" class="container-fluid sect">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>1:</h4>
+                <p>Download either</p>
+                <p><a style="color:#FD2138" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.js" download>rgbSlide.js</a> or <a style="color:#8ECD21" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js" download>rgbSlide.min.js</a></p>
+                <p>And include it before your scripts like so:</p>
+                <div style="border:2px solid #333;color:#ccc;background:#1a1a1a;padding:8px;font-family:'Courier New',monospace">
+                    &lt;head> <br />
+                    &#160;&#160;&#160;&lt;Bootstrap> <br />
+                    &#160;&#160;&#160;&lt;jQuery><br />
+                    &#160;&#160;&#160;&lt;script src="dependencies/rgbSlide.min.js">&lt;/script><br />
+                    &#160;&#160;&#160;&lt;Other Scripts and CSS><br />
+                    &lt;/head>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>2:</h4>
+                <p>Or just use</p>
+                <p style="color:#21C8CD;font-family:'Courier New',monospace;font-size:14px;">&lt;script src="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js"> &lt;/script></p>
+                <p>So you dont have to download anything</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>3:</h4>
+                <p>Download either</p>
+                <p><a style="color:#FD2138" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.js" download>rgbSlide.js</a> or <a style="color:#8ECD21" href="https://rgbplaza.github.io/RGBSlide/rgbSlide.min.js" download>rgbSlide.min.js</a></p>
+                <p>And include it before your scripts like so:</p>
+                <div style="border:2px solid #333;color:#ccc;background:#1a1a1a;padding:8px;font-family:'Courier New',monospace">
+                    &lt;head> <br />
+                    &#160;&#160;&#160;&lt;Bootstrap> <br />
+                    &#160;&#160;&#160;&lt;jQuery><br />
+                    &#160;&#160;&#160;&lt;script src="dependencies/rgbSlide.min.js">&lt;/script><br />
+                    &#160;&#160;&#160;&lt;Other Scripts and CSS><br />
+                    &lt;/head>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>4:</h4>
+                <p>Or just use</p>
+                <p>So you dont have to download anything</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
